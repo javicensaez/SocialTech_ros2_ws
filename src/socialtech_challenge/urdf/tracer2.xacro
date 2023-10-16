@@ -5,19 +5,19 @@
 <robot name="tracer2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <!-- Import Rviz colors -->
-  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/materials.xacro" />
+  <xacro:include filename="$(find socialtech_challenge)/urdf/materials.xacro" />
 
   <!-- Import lidar URDF -->
-  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/lidar.xacro" />  
+  <xacro:include filename="$(find socialtech_challenge)/urdf/lidar.xacro" />  
 
     <!-- Import lidar IMU -->
-  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/imu.xacro" />  
+  <xacro:include filename="$(find socialtech_challenge)/urdf/imu.xacro" />  
 
     <!-- Import camera URDF -->
-  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/camera.xacro" />  
+  <xacro:include filename="$(find socialtech_challenge)/urdf/camera.xacro" />  
 
   <!-- Import Gazebo elements, including Gazebo colors -->
-  <xacro:include filename="$(find SocialTech-Gazebo)/urdf/tracer2.gazebo" />
+  <xacro:include filename="$(find socialtech_challenge)/urdf/tracer2.gazebo" />
 
   <link
     name="base_link">
@@ -41,7 +41,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/base_link.STL" />
+          filename="$(find socialtech_challenge)/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -55,7 +55,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/base_link.STL" />
+          filename="$(find socialtech_challenge)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -81,7 +81,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/rueda_izquierda_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/rueda_izquierda_Link.STL" />
       </geometry>
       <material
         name="">
@@ -95,7 +95,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/rueda_izquierda_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/rueda_izquierda_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -134,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/rueda_derecha_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/rueda_derecha_Link.STL" />
       </geometry>
       <material
         name="">
@@ -148,7 +148,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/rueda_derecha_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/rueda_derecha_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -187,7 +187,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_delantero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_izquierdo_delantero_Link.STL" />
       </geometry>
       <material
         name="">
@@ -201,7 +201,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_delantero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_izquierdo_delantero_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -240,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_trasero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_izquierdo_trasero_Link.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_izquierdo_trasero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_izquierdo_trasero_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -293,7 +293,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_delantero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_derecho_delantero_Link.STL" />
       </geometry>
       <material
         name="">
@@ -307,7 +307,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_delantero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_derecho_delantero_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -346,7 +346,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_trasero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_derecho_trasero_Link.STL" />
       </geometry>
       <material
         name="">
@@ -360,7 +360,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://SocialTech-Gazebo/meshes/apoyo_derecho_trasero_Link.STL" />
+          filename="$(find socialtech_challenge)/meshes/apoyo_derecho_trasero_Link.STL" />
       </geometry>
     </collision>
   </link>

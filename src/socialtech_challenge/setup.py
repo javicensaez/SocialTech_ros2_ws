@@ -5,7 +5,7 @@ from itertools import chain
 
 package_name = 'socialtech_challenge'
 
-def generate_data_files(dirs=['launch', 'worlds', 'models']):
+def generate_data_files(dirs=['launch', 'worlds', 'models','urdf','config','meshes']):
     """
     Generate recursive list of data files, without listing directories in the output.
     """
