@@ -103,7 +103,7 @@
     name="rueda_izquierda_joint"
     type="continuous">
     <origin
-      xyz="0 0.13 0.0625"
+      xyz="0 0.13 -0.0625"
       rpy="-1.5708 0 0" />
     <parent
       link="base_link" />
@@ -156,7 +156,7 @@
     name="rueda_derecha_joint"
     type="continuous">
     <origin
-      xyz="0 -0.13 0.0625"
+      xyz="0 -0.13 -0.0625"
       rpy="-1.5708 0 0" />
     <parent
       link="base_link" />
@@ -209,7 +209,7 @@
     name="apoyo_izquierdo_delantero_joint"
     type="continuous">
     <origin
-      xyz="0.21 0.1425 0.03"
+      xyz="0.21 0.1425 -0.09"
       rpy="1.5708 0 0" />
     <parent
       link="base_link" />
@@ -262,7 +262,7 @@
     name="apoyo_izquierdo_trasero_joint"
     type="continuous">
     <origin
-      xyz="-0.21 0.1425 0.03"
+      xyz="-0.21 0.1425 -0.09"
       rpy="1.5708 1.2815 0" />
     <parent
       link="base_link" />
@@ -315,7 +315,7 @@
     name="apoyo_derecho_delantero_joint"
     type="continuous">
     <origin
-      xyz="0.21 -0.1425 0.03"
+      xyz="0.21 -0.1425 -0.09"
       rpy="1.5708 0 0" />
     <parent
       link="base_link" />
@@ -368,7 +368,7 @@
     name="apoyo_derecho_trasero_joint"
     type="continuous">
     <origin
-      xyz="-0.21 -0.1425 0.03"
+      xyz="-0.21 -0.1425 -0.09"
       rpy="1.5708 -0.040768 0" />
     <parent
       link="base_link" />

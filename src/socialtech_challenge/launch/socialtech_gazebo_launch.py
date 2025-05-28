@@ -14,9 +14,9 @@ from launch_ros.descriptions import ParameterValue
 def generate_launch_description():
 
   # Pose where we want to spawn the robot
-  spawn_x_val = '1.0'
-  spawn_y_val = '1.0'
-  spawn_z_val = '0.0'
+  spawn_x_val = '2.0'
+  spawn_y_val = '2.0'
+  spawn_z_val = '0.3'
   spawn_yaw_val = '0.00'
   urdf_file_path = 'urdf/tracer2.xacro'
   robot_name_in_model = 'tracer2'
@@ -29,7 +29,7 @@ def generate_launch_description():
   pkg_share = FindPackageShare(package='socialtech_challenge').find('socialtech_challenge')
   default_urdf_model_path = os.path.join(pkg_share, urdf_file_path)
   # Set the path to the world file
-  world_file_name = 'plano1.world'
+  world_file_name = 'ICAI_A501.world'
   world_path = os.path.join(pkg_share, 'worlds', world_file_name)
    
   # Set the path to the SDF model files.
@@ -125,7 +125,7 @@ def generate_launch_description():
   spawn_entity_cmd = Node(
         package="gazebo_ros",
         executable="spawn_entity.py",
-        arguments=["-topic", "robot_description", "-entity", robot_name_in_model, "-x", "1.0", "-y", "1.0", "-z", "0.0"],
+        arguments=["-topic", "robot_description", "-entity", robot_name_in_model, "-x", spawn_x_val, "-y", spawn_y_val, "-z", spawn_z_val],
         output="screen")
  
   # Create the launch description and populate
